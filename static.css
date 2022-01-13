@@ -49,9 +49,9 @@ body{
     display: block;
 }
 .nav-bar ul li a:hover{
-    color: #F54018;
-    background-color: #F2BB5A;
-    box-shadow: 0px 0px 0px 8px #f2bb5a;
+    color: #ff6d62;
+    background-color:  rgb(253, 215, 166);
+    box-shadow: 0px -1px 5px 8px  rgb(253, 215, 166);
 }
 .line{
     justify-content: center;
