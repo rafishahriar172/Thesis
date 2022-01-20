@@ -8,6 +8,7 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
+    border-bottom: solid #D38C10;
 
 }
 .top-side{
