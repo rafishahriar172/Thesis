@@ -35,6 +35,20 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.bottompart{
+  display: flex;
+  justify-content: left;
+}
+.B1{
+  justify-content: right;
+  margin-left: 306px;
+  padding: 0 25px;
+}
+.B2{
+  justify-content: right;
+  margin-left: 20px;
+  padding: 0 25px;
+}
 </style>
 </head>
 <body>
@@ -161,15 +175,16 @@ tr:nth-child(even) {
 
   
 </table>
-<br>
-    <tr>
-        
-        <td></td>
-        <td><button type="button" name="">Save</button>
-          <button type="button" name="">Cancel</button>
 
-        </td>
-<br>
-<p>Note: Can't add less than 4 members.</p>
+   <div class="bottompart">
+    <p style="color: red;">Note: Can't add less than 4 members.</p>
+    <button type="button" class="B1">Save</button>
+    <button type="button" class="B2">Cancel</button>
+    
+   </div>
+        
+          
+
+
 </body>
 </html>
