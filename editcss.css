@@ -128,7 +128,10 @@ body{
   }
   .bottompart{
     display: flex;
-    justify-content: left;
+    margin: -170px 278px;
+  }
+  .rightbutton{
+    margin: 0px 410px;
   }
   .bu{
       margin: 7px;
