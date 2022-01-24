@@ -108,7 +108,7 @@ body{
     margin-right: 42px;
     padding: 71px 10px;
   }
-  table {
+  /* table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -125,7 +125,7 @@ body{
   
   tr:nth-child(even) {
     background-color: #dddddd;
-  }
+  } */
   .bottompart{
     display: flex;
     margin: -170px 278px;
