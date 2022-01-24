@@ -1,0 +1,23 @@
+
+.div1 {
+    margin: 0px 410px;
+    height: 300px ;
+    width: 732px;
+    border: 1px solid grey;
+
+}
+
+.dash2 {
+margin: 69px 47px;
+    height: 178px;
+    width: 629px;
+    
+     border-right:2px dashed grey;
+     border-left:2px dashed grey;
+     border-top:2px dashed grey;
+
+border-bottom:2px dashed grey;
+
+
+}
+
