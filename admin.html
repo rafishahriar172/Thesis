@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- <link rel="stylesheet"  href="bootstrap.css"/>
+    <script type="jquery.min.js"></script>
+    <script type="bootstrap.min.js"></script> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="editM.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+  function myfunction()
+{
+    if (document.getElementById("displaytable").style.display === "none")
+        document.getElementById("displaytable").style.display="block";
+    else
+        document.getElementById("displaytable").style.display="none";
+}
+
+
+function myfunction() {
+  var tablewrap = document.getElementById('displaytable');
+  tablewrap.classList.toggle('hidden')
+};
+
+</script>
+
+<style>
+
+.hidden {
+  display: none;
+}
+
+.placeholder {
+  font-size: 12px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.bottompart{
+  display: flex;
+  justify-content: left;
+}
+.B1{
+  justify-content: right;
+  margin-left: 306px;
+  padding: 0 25px;
+}
+.B2{
+  justify-content: right;
+  margin-left: 20px;
+  padding: 0 25px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="top-side">
+        <div class="flex-right">
+            <a href="header-logo.png">
+                <img src="header-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="flex-left">
+            <p id="green">Current → <span id="red">The current semister of UIU</span></p>
+            <p id="green">Registration → <span id="red">The next semister of UIU</span></p>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+      <ul>
+          <li><a href="index.html"><b>Home</b></a></li>
+          <li><a href="#"><b>IQAC</b></a></li>
+          <div class="dropdown">
+              <button class="dropbtn">Course Evaluation
+                  <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Evaluation Form</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">Registration
+                  <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#">Pre-advising(New Course)</a>
+                  <a href="#">Pre-advising(Retake Course)</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">My Account
+                      <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#">Change Password</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">My View
+                  <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#">Result History</a>
+                  <a href="#">My Class Routine</a>
+                  <a href="#">Dgree Verification</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">FYDP
+                  <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#">FYDP 1</a>
+                  <a href="#">FYDP 2</a>
+                  </div>
+          </div>
+      </ul>
+ </div>
+  
+<br><br><br>
+
+<br><br><br>
+
+
+<button onclick="myfunction()">Groups</button>
+  <div id="displaytable" class="placeholder">
+  <table id="displaytable2" width="100%" cellpadding="1" cellspacing="0" border="3">
+    <tr align="center">
+      <td class="lbl">Group Title</td>
+      <td class="lbl">Group Admin Name</td>
+      <td class="lbl">Trimester</td>
+      <td class="lbl"></td>
+    </tr>
+    <tr>
+      <td align="center">G1</td>
+      <td align="center">A</td>
+      <td align="center">Summer 212</td>
+    </tr>
+    <tr>
+      <td align="center">G2</td>
+      <td align="center">B</td>
+      <td align="center">Summer 212</td>
+    </tr>
+    <tr>
+      <td align="center">G3</td>
+      <td align="center">C</td>
+      <td align="center">Summer 212</td>
+    </tr>
+    <tr>
+      <td align="center">G4</td>
+      <td align="center">D</td>
+      <td align="center">Summer 212</td>
+    </tr>
+    <tr>
+      <td align="center">G5</td>
+      <td align="center">E</td>
+      <td align="center">Summer 212</td>
+    </tr>
+  </table>
+</div> 
+
+
+
+   <div class="bottompart">
+    <button type="button" class="B1">Save</button>
+    <button type="button" class="B2">Cancel</button>
+    
+   </div>
+        
+          
+
+
+</body>
+</html>
