@@ -35,6 +35,17 @@ function myfunction() {
   tablewrap.classList.toggle('hidden')
 };
 
+function memberFunc(){
+  var x = document.getElementById('display');
+  x.classList.toggle('hidden')
+
+  if (document.getElementById("display").style.display === "none")
+        document.getElementById("display").style.display="block";
+    else
+        document.getElementById("display").style.display="none";
+
+};
+
 </script>
 
 <style>
@@ -150,49 +161,98 @@ tr:nth-child(even) {
 
 
 <button onclick="myfunction()">Groups</button>
+<button onclick="memberFunc()">Member</button>
   <div id="displaytable" class="placeholder">
   <table id="displaytable2" width="100%" cellpadding="1" cellspacing="0" border="3">
     <tr align="center">
       <td class="lbl">Group Title</td>
       <td class="lbl">Group Admin Name</td>
-      <td class="lbl">Trimester</td>
+      <td class="lbl">Aprrove</td>
       <td class="lbl"></td>
     </tr>
     <tr>
       <td align="center">G1</td>
       <td align="center">A</td>
-      <td align="center">Summer 212</td>
+      <td align="center"><button>Approve</button></td>
     </tr>
     <tr>
       <td align="center">G2</td>
       <td align="center">B</td>
-      <td align="center">Summer 212</td>
+      <td align="center"><button>Approve</button></td>
     </tr>
     <tr>
       <td align="center">G3</td>
       <td align="center">C</td>
-      <td align="center">Summer 212</td>
+      <td align="center"><button>Approve</button></td>
     </tr>
     <tr>
       <td align="center">G4</td>
       <td align="center">D</td>
-      <td align="center">Summer 212</td>
+      <td align="center"><button>Approve</button></td>
     </tr>
     <tr>
       <td align="center">G5</td>
       <td align="center">E</td>
-      <td align="center">Summer 212</td>
+      <td align="center"><button>Approve</button></td>
+    </tr>
+  </table>
+</div> 
+
+  <div id="display" class="placeholder">
+  <table id="display2" width="100%" cellpadding="1" cellspacing="0" border="3">
+    <tr align="center">
+      <td class="lbl">Group Title</td>
+      <td class="lbl">Member Name</td>
+      <td class="lbl">Member ID</td>
+      <td class="lbl">Aprrove</td>
+      <td class="lbl">Decline</td>
+      <td class="lbl"></td>
+    </tr>
+    <tr>
+      <td align="center">G1</td>
+      <td align="center">A</td>
+      <td align="center">011</td>
+      <td align="center"><button>Approve</button></td>
+      <td align="center"><button>Decline</button></td>
+    </tr>
+    <tr>
+      <td align="center">G2</td>
+      <td align="center">B</td>
+      <td align="center">011</td>
+      <td align="center"><button>Approve</button></td>
+      <td align="center"><button>Decline</button></td>
+    </tr>
+    <tr>
+      <td align="center">G3</td>
+      <td align="center">C</td>
+      <td align="center">011</td>
+      <td align="center"><button>Approve</button></td>
+      <td align="center"><button>Decline</button></td>
+    </tr>
+    <tr>
+      <td align="center">G4</td>
+      <td align="center">D</td>
+      <td align="center">011</td>
+      <td align="center"><button>Approve</button></td>
+      <td align="center"><button>Decline</button></td>
+    </tr>
+    <tr>
+      <td align="center">G5</td>
+      <td align="center">E</td>
+      <td align="center">011</td>
+      <td align="center"><button>Approve</button></td>
+      <td align="center"><button>Decline</button></td>
     </tr>
   </table>
 </div> 
 
 
 
-   <div class="bottompart">
+   <!-- <div class="bottompart">
     <button type="button" class="B1">Save</button>
     <button type="button" class="B2">Cancel</button>
     
-   </div>
+   </div> -->
         
           
 
