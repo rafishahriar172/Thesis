@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCAM</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="group.css">
+</head>
+<body>
+    <div class="top-side">
+        <div class="flex-right">
+            <a href="header-logo.png">
+                <img src="header-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="flex-left">
+            <p id="green">Current → <span id="red">The current semister on UIU</span></p>
+            <p id="green">Registration → <span id="red">The current semister on UIU</span></p>
+        </div>
+    </div>
+   <div class="nav-bar">
+    <ul>
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="#"><b>IQAC</b></a></li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Course Evaluation
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Evaluation Form</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Registration
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Pre-advising(New Course)</a>
+                    <a href="#">Pre-advising(Retake Course)</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">My Account
+                        <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Change Password</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">My View
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Result History</a>
+                    <a href="#">My Class Routine</a>
+                    <a href="#">Dgree Verification</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">FYDP
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">FYDP 1</a>
+                    <a href="#">FYDP 2</a>
+                    </div>
+            </div>
+        </li>
+    </ul>
+   </div>
+
+   <div class="inside">
+       <div class="grouppart">
+        <form action="/action_page.php">
+            <label id="fname"><b>Group Title</b></label>
+            <input type="text" id="aaa" size="50"><br><br>
+          </form>
+       </div>
+       <div class="savebutton">
+            <button onclick="displayfunc()" class="green" id="hit">Save</button>
+            <button onclick="window.location.href='./group.html'" class="red">Cancle</button>
+       </div>
+   </div>
+
+   <div class="bottompart" id="displayprop">
+       <h3 id="change">Group title</h3>
+       <div class="tablepart">
+           <div class="ftable">
+               <h2>Student Request</h2>
+                 <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Approve</th>
+                  <th>Reject</th>
+                </tr>
+                <tr>
+                    <td>ABC</td>
+                    <th><button class="green">Approve</button></th>
+                    <th><button class="red">Reject</button></th>
+                  </tr>
+                <tr>
+                  <td>DEF</td>
+                  <th><button class="green">Approve</button></th>
+                  <th><button class="red">Reject</button></th>
+                </tr>
+                <tr>
+                  <td>GHI</td>
+                  <th><button class="green">Approve</button></th>
+                  <th><button class="red">Reject</button></th>
+                </tr>
+              </table>
+           </div>
+           <div class="ttable">
+            <h2>Send Request</h2>
+            <table>
+           <tr>
+             <th>No of semister</th>
+             <th>Group Title</th>
+             <th>Join</th>
+             <th>Cancel</th>
+           </tr>
+           <tr>
+               <td>10</td>
+               <td>Capstone Project Title 1</td>
+               <th><button class="green">Join</button></th>
+               <th><button class="red">Cancle</button></th>
+             </tr>
+           <tr>
+             <td>11</td>
+             <td>Capstone Project Title 2</td>
+             <th><button class="green">Join</button></th>
+             <th><button class="red">Cancle</button></th>
+           </tr>
+           <tr>
+             <td>10</td>
+             <td>Capstone Project Title 3</td>
+             <th><button class="green">Join</button></th>
+             <th><button class="red">Cancle</button></th>
+           </tr>
+         </table>
+           </div>
+       </div>
+   </div>
+
+   <script>
+       function displayfunc(){
+            var x = document.getElementById("displayprop")
+            if (x.style.display==="none") {
+                x.style.display = "flex"
+            }
+            else{
+                x.style.display = "none"
+            }
+            var y = document.getElementById("aaa")
+            var z = document.getElementById("change")
+
+            z.innerHTML = "Group Tilte : " + y
+            
+       }
+   </script>
+</body>
+</html>
