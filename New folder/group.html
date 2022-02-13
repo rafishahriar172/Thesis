@@ -83,22 +83,20 @@
 
    <div class="inside">
        <div class="grouppart">
-        <form action="/action_page.php">
             <label id="fname"><b>Group Title</b></label>
-            <input type="text" id="aaa" size="50"><br><br>
-          </form>
+            <input type="text" id="myText" size="50px">
        </div>
        <div class="savebutton">
             <button onclick="displayfunc()" class="green" id="hit">Save</button>
-            <button onclick="window.location.href='./group.html'" class="red">Cancle</button>
+            <button onclick="window.location.href='./group.html'" class="red">Cancel</button>
        </div>
    </div>
 
    <div class="bottompart" id="displayprop">
-       <h3 id="change">Group title</h3>
+       <h3 style="margin-left: 49px;" id="change">Group Title</h3>
        <div class="tablepart">
            <div class="ftable">
-               <h2>Student Request</h2>
+               <h2 style="margin-left: 49px;">Student Request</h2>
                  <table>
                 <tr>
                   <th>Name</th>
@@ -123,10 +121,10 @@
               </table>
            </div>
            <div class="ttable">
-            <h2>Send Request</h2>
+            <h2 style="margin-left: 49px;">Send Request</h2>
             <table>
            <tr>
-             <th>No of semister</th>
+             <th>No of semester</th>
              <th>Group Title</th>
              <th>Join</th>
              <th>Cancel</th>
@@ -135,19 +133,19 @@
                <td>10</td>
                <td>Capstone Project Title 1</td>
                <th><button class="green">Join</button></th>
-               <th><button class="red">Cancle</button></th>
+               <th><button class="red">Cancel</button></th>
              </tr>
            <tr>
              <td>11</td>
              <td>Capstone Project Title 2</td>
              <th><button class="green">Join</button></th>
-             <th><button class="red">Cancle</button></th>
+             <th><button class="red">Cancel</button></th>
            </tr>
            <tr>
              <td>10</td>
              <td>Capstone Project Title 3</td>
              <th><button class="green">Join</button></th>
-             <th><button class="red">Cancle</button></th>
+             <th><button class="red">Cancel</button></th>
            </tr>
          </table>
            </div>
@@ -163,10 +161,6 @@
             else{
                 x.style.display = "none"
             }
-            var y = document.getElementById("aaa")
-            var z = document.getElementById("change")
-
-            z.innerHTML = "Group Tilte : " + y
             
        }
    </script>

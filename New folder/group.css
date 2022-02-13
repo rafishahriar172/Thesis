@@ -101,7 +101,10 @@ body{
     margin: 276px 120px;
     width: 80%;
 }
-
+button{
+    size: 20px;
+    color: white;
+}
 .inside {
     margin: 126px 429px;
     width: auto;
@@ -110,17 +113,21 @@ body{
     font-size: large;
 }
 .savebutton{
-    margin-left: 378px;
+    margin-left: 329px;
+    margin-top: 11px;
 }
 .green{
     background-color: #0A9014;
+    font-size: 20px;
 }
 .red{
     background-color: #FF1818;
+    font-size: 20px;
 }
 .bottompart{
     display: none;
     align-items: left;
+    margin: -61px 16px;
     justify-content: center;
     flex-direction: column;
 }
@@ -128,7 +135,22 @@ body{
 .tablepart{
     display: flex;
     flex-direction: row;
+    margin-top: -22px;
 }
 .ttable{
-    margin-left: 754px;
+    margin-left: 93px;
 }
+table{
+    border-collapse: collapse;
+}
+th, td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 52px;
+  padding-right: 64px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
