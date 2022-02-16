@@ -21,28 +21,53 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <script>
+
+$( document ).ready(function() {
+    // console.log( "ready!" );
+    $("#displaytable").hide();
+  $("#display").hide();
+});
+
+
   function myfunction()
 {
-    if (document.getElementById("displaytable").style.display === "none")
-        document.getElementById("displaytable").style.display="block";
-    else
-        document.getElementById("displaytable").style.display="none";
-}
+  // var tablewrap = document.getElementById('displaytable');
+  // tablewrap.classList.toggle('hidden')
+  //   if (document.getElementById("displaytable").style.display === "none")      
+  //       {
+  //         document.getElementById("displaytable").style.display="block";
+  //         document.getElementById("display").style.display="none";
+  //       }
+  //   else 
+  //   {
 
+  //       document.getElementById("displaytable").style.display="none"; 
+  //       document.getElementById("display").style.display="none"; 
+  //   }
 
-function myfunction() {
-  var tablewrap = document.getElementById('displaytable');
-  tablewrap.classList.toggle('hidden')
+  $("#displaytable").show();
+  $("#display").hide();
 };
 
-function memberFunc(){
-  var x = document.getElementById('display');
-  x.classList.toggle('hidden')
 
-  if (document.getElementById("display").style.display === "none")
-        document.getElementById("display").style.display="block";
-    else
-        document.getElementById("display").style.display="none";
+function memberFunc(){
+  // var x = document.getElementById('display');
+  // x.classList.toggle('hidden')
+
+  // if (document.getElementById("display").style.display === "none")
+  //       {
+  //         document.getElementById("display").style.display="block";
+  //         document.getElementById("displaytable").style.display="none";
+  //       }
+  //   else
+  //       {
+  //         document.getElementById("display").style.display="none";
+  //         document.getElementById("displaytable").style.display="none";
+  //       }
+
+$("#displaytable").hide();
+  $("#display").show();
+
 
 };
 
@@ -86,6 +111,32 @@ tr:nth-child(even) {
   justify-content: right;
   margin-left: 20px;
   padding: 0 25px;
+}
+.display{
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
 }
 </style>
 </head>
@@ -160,53 +211,59 @@ tr:nth-child(even) {
 <br><br><br>
 
 
-<button onclick="myfunction()">Groups</button>
-<button onclick="memberFunc()">Member</button>
+<button onclick="myfunction()" style="
+    margin-left: 20px;
+">Groups</button>
+<!-- <button onclick="memberFunc()">Member</button> -->
   <div id="displaytable" class="placeholder">
-  <table id="displaytable2" width="100%" cellpadding="1" cellspacing="0" border="3">
+  <table id="displaytable2" width="100%" cellpadding="1" cellspacing="0" border="3" style="margin-left: 20px;">
     <tr align="center">
       <td class="lbl">Group Title</td>
       <td class="lbl">Group Admin Name</td>
       <td class="lbl">Aprrove</td>
-      <td class="lbl"></td>
+      <td class="lbl">Pending Request</td>
     </tr>
     <tr>
       <td align="center">G1</td>
       <td align="center">A</td>
       <td align="center"><button>Approve</button></td>
+      <td align="center"><button onclick="memberFunc()" >Pending</button></td>
     </tr>
     <tr>
       <td align="center">G2</td>
       <td align="center">B</td>
       <td align="center"><button>Approve</button></td>
+      <td align="center"><button onclick="memberFunc()">Pending</button></td>
     </tr>
     <tr>
       <td align="center">G3</td>
       <td align="center">C</td>
       <td align="center"><button>Approve</button></td>
+      <td align="center"><button onclick="memberFunc()">Pending</button></td>
     </tr>
     <tr>
       <td align="center">G4</td>
       <td align="center">D</td>
       <td align="center"><button>Approve</button></td>
+      <td align="center"><button onclick="memberFunc()">Pending</button></td>
     </tr>
     <tr>
       <td align="center">G5</td>
       <td align="center">E</td>
       <td align="center"><button>Approve</button></td>
+      <td align="center"><button onclick="memberFunc()">Pending</button></td>
     </tr>
   </table>
 </div> 
 
   <div id="display" class="placeholder">
-  <table id="display2" width="100%" cellpadding="1" cellspacing="0" border="3">
+  <table id="display2" width="100%" cellpadding="1" cellspacing="0" border="3" style="margin-left: 20px;">
     <tr align="center">
       <td class="lbl">Group Title</td>
       <td class="lbl">Member Name</td>
       <td class="lbl">Member ID</td>
       <td class="lbl">Aprrove</td>
       <td class="lbl">Decline</td>
-      <td class="lbl"></td>
     </tr>
     <tr>
       <td align="center">G1</td>
@@ -255,7 +312,7 @@ tr:nth-child(even) {
    </div> -->
         
           
-
+<!-- <div class="active" id="overlay"></div> -->
 
 </body>
 </html>
