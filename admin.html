@@ -139,6 +139,11 @@ tr:nth-child(even) {
   opacity: 1;
   pointer-events: all;
 }
+.modal-body {
+position: relative;
+padding: 74px;
+}
+
 </style>
 </head>
 <body>
@@ -212,9 +217,9 @@ tr:nth-child(even) {
 <br><br><br>
 
 
-<button class="btn btn-primary" onclick="myfunction()" style="
+<button class="btn btn-primary btn-lg" onclick="myfunction()" style="
     margin-left: 20px;
-">Groups</button>
+">See Group Requests</button>
 <!-- <button onclick="memberFunc()">Member</button> -->
   <div id="displaytable" class="placeholder">
   <table id="displaytable2" width="100%" cellpadding="1" cellspacing="0" border="3" style="margin-left: 20px;">
@@ -230,33 +235,33 @@ tr:nth-child(even) {
       <td align="center">G1</td>
       <td align="center">A</td>
       <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
-      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pending</button>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button>
 </td>
     </tr>
     <tr>
       <td align="center">G2</td>
       <td align="center">B</td>
       <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
-      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pending</button>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button>
 </td>
     </tr>
     <tr>
       <td align="center">G3</td>
       <td align="center">C</td>
       <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
-      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pending</button></td>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button></td>
     </tr>
     <tr>
       <td align="center">G4</td>
       <td align="center">D</td>
       <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
-      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pending</button></td>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button></td>
     </tr>
     <tr>
       <td align="center">G5</td>
       <td align="center">E</td>
       <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
-      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pending</button></td>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button></td>
     </tr>
   </table>
 </div> 
