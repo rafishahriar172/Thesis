@@ -94,10 +94,10 @@
    </div>
 
    <div class="bottompart" id="displayprop">
-       
+       <h2 id="showtext" style="margin: 18px 50px"></h2>
        <div class="tablepart">
            <div class="ftable">
-               <h2 style="margin-left: 49px;">Student Request</h2>
+               <h2 style="margin: 29px 50px;">Student Request</h2>
                  <table>
                 <tr>
                   <th>Name</th>
@@ -128,10 +128,12 @@
             var x = document.getElementById("displayprop")
             if (x.style.display==="none") {
                 x.style.display = "flex"
+               document.getElementById("showtext").innerHTML = "Group Title: " + document.getElementById("text1").value;
             }
             else{
                 x.style.display = "none"
             }
+            
             
        }
    </script>

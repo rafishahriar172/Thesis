@@ -127,7 +127,7 @@ button{
 .bottompart{
     display: none;
     align-items: left;
-    margin: -70px 240px;
+    margin: -111px 240px;
     justify-content: center;
     flex-direction: column;
 }
