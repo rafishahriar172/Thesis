@@ -33,7 +33,8 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 50%;
+  width: 80%;
+  padding: 10px 50px;
 }
 
 td, th {
@@ -45,50 +46,19 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-.bottompart{
-  display: flex;
-  justify-content: left;
-  margin-top: -83px;
+.green2{
+    background-color: #0A9014;
+    font-size: 20px;
 }
-#bf0{
-  margin: 16px 314px;
+.red{
+    background-color: #FF1818;
+    font-size: 20px;
 }
-#bf1{
-  margin: -10px 314px;
-}
-#bf2{
-  margin: 10px 314px;
-}
-#bf3{
-  margin: -48px 314px;
-}
-#bf4{
-  margin: -60px 314px;
-}
-#bf5{
-  margin: 21px 314px;
+.green{
+    background-color: #0A9014;
+    font-size: 20px;
 }
 
-.B1{
-  justify-content: right;
-  margin-left: 296px;
-  padding: -13px 16px;
-  background-color: #4CAF50;;
-  color: white;
-}
-.B2{
-  justify-content: right;
-  margin-left: 20px;
-  padding: 0 25px;
-  background-color: red;
-  color: white;
-}
-.B3{
-  margin-right: 20px;
-  padding: 0 25px;
-  background-color: #008CBA;;
-  color: white;
-}
 </style>
 </head>
 <body>
@@ -161,14 +131,17 @@ tr:nth-child(even) {
 
 <div class="reqpart">
   <div class="table">
+    <br>
+    <h3 style="margin-left: 49px; margin: 0px">Choose Mentor</h3>
+            <br>
     <table>
-      <form>
-        <tr>
+    <thead style="background-color: black; color: white;">
             <th>Mentor Name</th>
             <th>Mentor Details</th>
-            <th>Previous Projects</th>
+            <th>Research Field and Projects</th>
             <th>Availability</th>
-          </tr>
+            <th>Request</th>
+          </thead>
        
         <tbody>
           <tr>
@@ -177,6 +150,7 @@ tr:nth-child(even) {
             <td>Email: hsarwar@cse.uiu.ac.bd, Contact no.: 0123456789</td>
             <td>Prev Project Details will be given here</td>
             <td>Yes</td>
+            <th><button style="background-color: green; color: white;">Request</button></th>
           </tr>
           <tr>
             
@@ -184,6 +158,7 @@ tr:nth-child(even) {
             <td>Email: a@cse.uiu.ac.bd, Contact no.: 0123456789</td>
             <td>Prev Project Details will be given here</td>
             <td>No</td>
+            <th><button style="background-color: green; color: white;">Request</button></th>
           </tr>
           <tr>
             
@@ -191,6 +166,7 @@ tr:nth-child(even) {
             <td>Email: b@cse.uiu.ac.bd, Contact no.: 0123456789</td>
             <td>Prev Project Details will be given here</td>
             <td>No</td>
+            <th><button style="background-color: green; color: white;">Request</button></th>
           </tr>
           <tr>
             
@@ -198,6 +174,7 @@ tr:nth-child(even) {
             <td>Email: c@cse.uiu.ac.bd, Contact no.: 0123456789</td>
             <td>Prev Project Details will be given here</td>
             <td>Yes</td>
+            <th><button style="background-color: green; color: white;">Request</button></th>
           </tr>
           <tr>
             
@@ -205,6 +182,7 @@ tr:nth-child(even) {
             <td>Email: d@cse.uiu.ac.bd, Contact no.: 0123456789</td>
             <td>Prev Project Details will be given here</td>
             <td>Yes</td>
+           <th><button style="background-color: green; color: white;">Request</button></th>
           </tr>
           <tr>
             
@@ -212,34 +190,12 @@ tr:nth-child(even) {
             <td>Email: e@cse.uiu.ac.bd, Contact no.: 0123456789</td>
             <td>Prev Project Details will be given here</td>
             <td>Yes</td>
+            <th><button style="background-color: green; color: white;">Request</button></th>
           </tr>
         </tbody>
-      </form>
     </table>
   </div>
-  <div class="joinpart">
-    <button type="button1" class="B1" id="bf0">Request</button>
-    <br><br><br>
-    <button type="button1" class="B1" id="bf1">Request</button>
-    <br><br><br>
-    <button type="button1" class="B1" id="bf2">Request</button>
-    <br><br><br>
-    <button type="button1" class="B1" id="bf3">Request</button>
-    <br><br><br>
-    <button type="button1" class="B1" id="bf4">Request</button>
-    <br><br><br>
-    <button type="button1" class="B1" id="bf5">Request</button>
-  </div>
-</div>
-<br>
-
-   <div class="bottompart">
-    <button type="button1" class="B1">Save</button>
-    <button type="button2" class="B2">Cancel</button>
-    
-   </div>
-        
-          
+         
 
 
 </body>
