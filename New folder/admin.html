@@ -65,7 +65,7 @@ function memberFunc(){
   //         document.getElementById("displaytable").style.display="none";
   //       }
 
-$("#displaytable").hide();
+$("#displaytable3").hide();
   $("#display").show();
 
 
@@ -341,11 +341,71 @@ padding: 56px;
     </tr>
 </tbody>
   </table>
+
       </div>
     </div>
 
   </div>
 </div>
+
+<button class="btn btn-primary btn-lg" onclick="memberFunc()" style="
+    margin-left: 20px;
+">See Mentor Requests</button>
+<br>
+<br>
+  <div id="displaytablez" class="placeholder">
+  <table id="displaytable3" width="100%" cellpadding="1" cellspacing="0" border="3" style="margin-left: 20px;">
+    <thead style="background-color: black; color: white;">
+      
+      <th class="lbl">Group Title</th>
+      <th class="lbl">Group Admin Name</th>
+      <th class="lbl">Mentor Name</th>
+      <th class="lbl">Approve</th>
+      <th class="lbl">Decline</th>
+    
+    </thead>
+    <tbody>
+
+    <tr>
+      <td align="center">G1</td>
+      <td align="center">A</td>
+      <td>Prof. Dr. Hasan Sarwar</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button class="btn btn-danger btn-lg">Decline</button></td>
+</td>
+    </tr>
+    <tr>
+      <td align="center">G2</td>
+      <td align="center">B</td>
+      <td>Respected Professor A</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button class="btn btn-danger btn-lg">Decline</button></td>
+</td>
+    </tr>
+    <tr>
+      <td align="center">G3</td>
+      <td align="center">C</td>
+      <td>Respected Professor B</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button class="btn btn-danger btn-lg">Decline</button></td></td>
+    </tr>
+    <tr>
+      <td align="center">G4</td>
+      <td align="center">D</td>
+      <td>Respected Professor C</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button class="btn btn-danger btn-lg">Decline</button></td></td>
+    </tr>
+    <tr>
+      <td align="center">G5</td>
+      <td align="center">E</td>
+      <td>Respected Professor D</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button class="btn btn-danger btn-lg">Decline</button></td></td>
+    </tr>
+</tbody>
+  </table>
+</div> 
 
 
 </body>
