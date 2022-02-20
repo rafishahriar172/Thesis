@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- <link rel="stylesheet"  href="bootstrap.css"/>
+    <script type="jquery.min.js"></script>
+    <script type="bootstrap.min.js"></script> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="editM.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+
+$( document ).ready(function() {
+    // console.log( "ready!" );
+    $("#displaytable").hide();
+  $("#display").hide();
+});
+
+
+  function myfunction()
+{
+  // var tablewrap = document.getElementById('displaytable');
+  // tablewrap.classList.toggle('hidden')
+  //   if (document.getElementById("displaytable").style.display === "none")      
+  //       {
+  //         document.getElementById("displaytable").style.display="block";
+  //         document.getElementById("display").style.display="none";
+  //       }
+  //   else 
+  //   {
+
+  //       document.getElementById("displaytable").style.display="none"; 
+  //       document.getElementById("display").style.display="none"; 
+  //   }
+
+  $("#displaytable").show();
+  $("#display").hide();
+};
+
+
+function memberFunc(){
+  // var x = document.getElementById('display');
+  // x.classList.toggle('hidden')
+
+  // if (document.getElementById("display").style.display === "none")
+  //       {
+  //         document.getElementById("display").style.display="block";
+  //         document.getElementById("displaytable").style.display="none";
+  //       }
+  //   else
+  //       {
+  //         document.getElementById("display").style.display="none";
+  //         document.getElementById("displaytable").style.display="none";
+  //       }
+
+$("#displaytable").hide();
+  $("#display").show();
+
+
+};
+
+</script>
+
+<style>
+
+.hidden {
+  display: none;
+}
+
+.placeholder {
+  font-size: 12px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  font-size: 17px;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.bottompart{
+  display: flex;
+  justify-content: left;
+}
+.B1{
+  justify-content: right;
+  margin-left: 306px;
+  padding: 0 25px;
+}
+.B2{
+  justify-content: right;
+  margin-left: 20px;
+  padding: 0 25px;
+}
+.display{
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-body {
+position: relative;
+padding: 56px;
+}
+.modal-dialog {
+          width: 500px;
+        }
+
+</style>
+</head>
+<body>
+
+
+<div class="top-side">
+        <div class="flex-right">
+            <a href="header-logo.png">
+                <img src="header-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="flex-left">
+            <p id="green">Current → <span id="red">The current semester of UIU</span></p>
+            <p id="green">Registration → <span id="red">The next semester of UIU</span></p>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+      <ul>
+          <li><a href="adminindex.html"><b>Home</b></a></li>
+          <li><a href="#"><b>IQAC</b></a></li>
+          <div class="dropdown">
+              <button class="dropbtn">Course Evaluation
+                  <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Evaluation Form</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">Registration
+                  <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#">Pre-advising(New Course)</a>
+                  <a href="#">Pre-advising(Retake Course)</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">My Account
+                      <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#">Change Password</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">My View
+                  <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#">Result History</a>
+                  <a href="#">My Class Routine</a>
+                  <a href="#">Dgree Verification</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">FYDP
+                  <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#">FYDP 1</a>
+                  <a href="#">FYDP 2</a>
+                  </div>
+          </div>
+      </ul>
+ </div>
+  
+<br><br><br>
+
+<br><br><br>
+
+
+<button class="btn btn-primary btn-lg" onclick="myfunction()" style="
+    margin-left: 20px;
+">See Group Requests</button>
+<br>
+<br>
+<!-- <button onclick="memberFunc()">Member</button> -->
+  <div id="displaytable" class="placeholder">
+  <table id="displaytable2" width="100%" cellpadding="1" cellspacing="0" border="3" style="margin-left: 20px;">
+    <thead style="background-color: black; color: white;">
+      
+      <th class="lbl">Group Title</th>
+      <th class="lbl">Group Admin Name</th>
+      <th class="lbl">Approve</th>
+      <th class="lbl">Pending Request</th>
+    
+    </thead>
+    <tbody>
+
+    <tr>
+      <td align="center">G1</td>
+      <td align="center">A</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button>
+</td>
+    </tr>
+    <tr>
+      <td align="center">G2</td>
+      <td align="center">B</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button>
+</td>
+    </tr>
+    <tr>
+      <td align="center">G3</td>
+      <td align="center">C</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button></td>
+    </tr>
+    <tr>
+      <td align="center">G4</td>
+      <td align="center">D</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button></td>
+    </tr>
+    <tr>
+      <td align="center">G5</td>
+      <td align="center">E</td>
+      <td align="center"><button class="btn btn-success btn-lg">Approve</button></td>
+      <td align="center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See pending request</button></td>
+    </tr>
+</tbody>
+  </table>
+</div> 
+
+   
+
+
+
+   <!-- <div class="bottompart">
+    <button type="button" class="B1">Save</button>
+    <button type="button" class="B2">Cancel</button>
+    
+   </div> -->
+        
+          
+<!-- <div class="active" id="overlay"></div> -->
+
+<!-- Trigger the modal with a button -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+      <div class="modal-body">
+  <table id="display2" width="100%" cellpadding="1" cellspacing="0" border="3" style="margin-left: 20px;">
+    <thead style="background-color: black; color: white;">
+      <td class="lbl">Member Name</td>
+      <td class="lbl">Member ID</td>
+      <td class="lbl">Approve</td>
+      <td class="lbl">Decline</td>
+  </thead>
+
+   <tbody>
+    <tr>
+      <td align="center">A</td>
+      <td align="center">011</td>
+      <td align="center"><button class="btn btn-success">Approve</button></td>
+      <td align="center"><button class="btn btn-danger">Decline</button></td>
+    </tr>
+    <tr>
+      <td align="center">B</td>
+      <td align="center">011</td>
+      <td align="center"><button class="btn btn-success">Approve</button></td>
+      <td align="center"><button class="btn btn-danger">Decline</button></td>
+    </tr>
+    <tr>
+      <td align="center">C</td>
+      <td align="center">011</td>
+      <td align="center"><button class="btn btn-success">Approve</button></td>
+      <td align="center"><button class="btn btn-danger">Decline</button></td>
+    </tr>
+    <tr>
+      <td align="center">D</td>
+      <td align="center">011</td>
+      <td align="center"><button class="btn btn-success">Approve</button></td>
+      <td align="center"><button class="btn btn-danger">Decline</button></td>
+    </tr>
+    <tr>
+      <td align="center">E</td>
+      <td align="center">011</td>
+      <td align="center"><button class="btn btn-success">Approve</button></td>
+      <td align="center"><button class="btn btn-danger">Decline</button></td>
+    </tr>
+</tbody>
+  </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>

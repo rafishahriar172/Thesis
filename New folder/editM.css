@@ -8,7 +8,6 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
-    border-bottom: solid #D38C10;
 
 }
 .top-side{
@@ -53,6 +52,7 @@ body{
 .dropdown {
     float: left;
     overflow: hidden;
+    background-color: #999999; 
   }
   
   /* Dropdown button */
@@ -70,7 +70,7 @@ body{
     background-color:  rgb(253, 215, 166);
     box-shadow: 0px -1px 5px 8px  rgb(253, 215, 166);
 }
-  .dropdown-content {
+ /* .dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
@@ -92,68 +92,11 @@ body{
     box-shadow: -5px 13px 27px -7px rgba(0,0,0,0.75);
   }
   
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
-  }
+  }*/
 .line{
     justify-content: center;
     margin: 276px 120px;
     width: 80%;
-}
-button{
-    size: 20px;
-    color: white;
-}
-.inside {
-    margin: 126px 429px;
-    width: center;
-}
-.grouppart{
-    font-size: large;
-}
-.savebutton{
-    margin-left: 329px;
-    margin-top: 11px;
-}
-.green{
-    background-color: #0A9014;
-    font-size: 20px;
-}
-.red{
-    background-color: #FF1818;
-    font-size: 20px;
-}
-.bottompart{
-    display: none;
-    align-items: left;
-    margin: -111px 240px;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.tablepart{
-    display: flex;
-    flex-direction: row;
-    margin-top: -22px;
-}
-.ttable{
-    margin-left: 93px;
-}
-table{
-    border-collapse: collapse;
-}
-th, td{
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  padding-left: 147px;
-  padding-right: 133px;
-}
-tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-.b{
-  margin: 100px;
 }
