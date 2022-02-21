@@ -99,20 +99,20 @@
            <tr>
                <td>Spring 221</td>
                <td>Capstone Project Title 1</td>
-               <th><button class="green">Join</button></th>
-               <th><button class="red">Cancel</button></th>
+               <th><button type="button" class="btn btn-success" id="myBtn1" onclick="pop()">Join</button></th>
+               <th><button type="button" class="btn btn-danger">Cancel</button></th>
              </tr>
            <tr>
              <td>Fall 213</td>
              <td>Capstone Project Title 2</td>
-             <th><button class="green">Join</button></th>
-             <th><button class="red">Cancel</button></th>
+             <th><button type="button" class="btn btn-success" id="myBtn2" onclick="pop()">Join</button></th>
+             <th><button type="button" class="btn btn-danger">Cancel</button></th>
            </tr>
            <tr>
              <td>Spring 221</td>
              <td>Capstone Project Title 3</td>
-             <th><button class="green">Join</button></th>
-             <th><button class="red">Cancel</button></th>
+             <th><button type="button" class="btn btn-success" id="myBtn3" onclick="pop()">Join</button></th>
+             <th><button type="button" class="btn btn-danger">Cancel</button></th>
            </tr>
        </tbody>
          </table>
@@ -122,19 +122,17 @@
 
    <div>
             <a href="group.html">
-              <button class="green2">Create Group</button> </a>   
-    </div>
+            <button type="button" class="btn btn-success" style="margin: 20px 91px;">Create Group</button>
 
    <script>
-       function displayfunc(){
-            var x = document.getElementById("displayprop")
-            if (x.style.display==="none") {
-                x.style.display = "flex"
-            }
-            else{
-                x.style.display = "none"
-            }
-            
+       function pop(){
+           alert("<em>Request Sucessful<em>");
+           document.getElementById("myBtn1").disabled = true;
+           document.getElementById("myBtn2").disabled = true;
+           document.getElementById("myBtn3").disabled = true;
+           document.getElementById("myBtn1").innerText = "Pending";
+           document.getElementById("myBtn2").innerText = "Pending";
+           document.getElementById("myBtn3").innerText = "Pending";
        }
    </script>
 </body>
