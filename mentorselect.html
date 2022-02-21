@@ -148,55 +148,348 @@ tr:nth-child(even) {
             
             <td>Prof. Dr. Hasan Sarwar</td>
             <td>Email: hsarwar@cse.uiu.ac.bd, Contact no.: 0123456789</td>
-            <td>Prev Project Details will be given here</td>
+            <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#hmodal">Prev Project Details will be given here</button></th>
             <td>Yes</td>
-            <th><button style="background-color: green; color: white;">Request</button></th>
+            <th><button type="button" class="btn btn-success" id="myBtn" onclick="myFunction()">Request</button></th>
           </tr>
           <tr>
             
             <td>Respected Professor A</td>
             <td>Email: a@cse.uiu.ac.bd, Contact no.: 0123456789</td>
-            <td>Prev Project Details will be given here</td>
+            <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#amodal">Prev Project Details will be given here</button></th>
             <td>No</td>
-            <th><button style="background-color: green; color: white;">Request</button></th>
+            <th><button type="button" class="btn btn-success" id="myBtn" onclick="myFunction()">Request</button></th>
           </tr>
           <tr>
             
             <td>Respected Professor B</td>
             <td>Email: b@cse.uiu.ac.bd, Contact no.: 0123456789</td>
-            <td>Prev Project Details will be given here</td>
+            <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#bmodal">Prev Project Details will be given here</button></th>
             <td>No</td>
-            <th><button style="background-color: green; color: white;">Request</button></th>
+            <th><button type="button" class="btn btn-success" id="myBtn" onclick="myFunction()">Request</button></th>
           </tr>
           <tr>
             
             <td>Respected Professor C</td>
             <td>Email: c@cse.uiu.ac.bd, Contact no.: 0123456789</td>
-            <td>Prev Project Details will be given here</td>
+            <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#cmodal">Prev Project Details will be given here</button></th>
             <td>Yes</td>
-            <th><button style="background-color: green; color: white;">Request</button></th>
+            <th><button type="button" class="btn btn-success" id="myBtn" onclick="myFunction()">Request</button></th>
           </tr>
           <tr>
             
             <td>Respected Professor D</td>
             <td>Email: d@cse.uiu.ac.bd, Contact no.: 0123456789</td>
-            <td>Prev Project Details will be given here</td>
+            <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#dmodal">Prev Project Details will be given here</button></th>
             <td>Yes</td>
-           <th><button style="background-color: green; color: white;">Request</button></th>
+            <th><button type="button" class="btn btn-success" id="myBtn" onclick="myFunction()">Request</button></th>
           </tr>
           <tr>
             
             <td>Respected Professor E</td>
             <td>Email: e@cse.uiu.ac.bd, Contact no.: 0123456789</td>
-            <td>Prev Project Details will be given here</td>
+            <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#emodal">Prev Project Details will be given here</button></th>
             <td>Yes</td>
-            <th><button style="background-color: green; color: white;">Request</button></th>
+            <th><button type="button" class="btn btn-success" id="myBtn" onclick="myFunction()">Request</button></th>
           </tr>
         </tbody>
     </table>
   </div>
+
+    <!-- Modal -->
+<div id="hmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Professor Name</th>
+              <th>Current FYDP Projects</th>
+              <th>Previous FYDP Projects</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Prof. Dr. Hasan Sarwar</td>
+              <td>
+                <ol>
+                  <li>FYDP Project X</li>
+                  <li>FYDP Project Y</li>
+                  <li>FYDP Project Z</li>
+                </ol>
+              </td>
+              <td>
+                <ol>
+                  <li>FYDP Project X</li>
+                  <li>FYDP Project Y</li>
+                  <li>FYDP Project Z</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Modal -->
+    <div id="amodal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Professor Name</th>
+                  <th>Current FYDP Projects</th>
+                  <th>Previous FYDP Projects</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Respected Professor A</td>
+                  <td>
+                    <ol>
+                      <li>FYDP Project X</li>
+                      <li>FYDP Project Y</li>
+                      <li>FYDP Project Z</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ol>
+                      <li>FYDP Project X</li>
+                      <li>FYDP Project Y</li>
+                      <li>FYDP Project Z</li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+  <!-- Modal -->
+  <div id="bmodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Professor Name</th>
+                <th>Current FYDP Projects</th>
+                <th>Previous FYDP Projects</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Respected Professor B</td>
+                <td>
+                  <ol>
+                    <li>FYDP Project X</li>
+                    <li>FYDP Project Y</li>
+                    <li>FYDP Project Z</li>
+                  </ol>
+                </td>
+                <td>
+                  <ol>
+                    <li>FYDP Project X</li>
+                    <li>FYDP Project Y</li>
+                    <li>FYDP Project Z</li>
+                  </ol>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+    <!-- Modal -->
+<div id="cmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Professor Name</th>
+              <th>Current FYDP Projects</th>
+              <th>Previous FYDP Projects</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Respected Professor C</td>
+              <td>
+                <ol>
+                  <li>FYDP Project X</li>
+                  <li>FYDP Project Y</li>
+                  <li>FYDP Project Z</li>
+                </ol>
+              </td>
+              <td>
+                <ol>
+                  <li>FYDP Project X</li>
+                  <li>FYDP Project Y</li>
+                  <li>FYDP Project Z</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Modal -->
+  <div id="dmodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Professor Name</th>
+                <th>Current FYDP Projects</th>
+                <th>Previous FYDP Projects</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Respected Professor D</td>
+                <td>
+                  <ol>
+                    <li>FYDP Project X</li>
+                    <li>FYDP Project Y</li>
+                    <li>FYDP Project Z</li>
+                  </ol>
+                </td>
+                <td>
+                  <ol>
+                    <li>FYDP Project X</li>
+                    <li>FYDP Project Y</li>
+                    <li>FYDP Project Z</li>
+                  </ol>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div id="emodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Professor Name</th>
+              <th>Current FYDP Projects</th>
+              <th>Previous FYDP Projects</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Respected Professor E</td>
+              <td>
+                <ol>
+                  <li>FYDP Project X</li>
+                  <li>FYDP Project Y</li>
+                  <li>FYDP Project Z</li>
+                </ol>
+              </td>
+              <td>
+                <ol>
+                  <li>FYDP Project X</li>
+                  <li>FYDP Project Y</li>
+                  <li>FYDP Project Z</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
          
 
+  <script>
+    function myFunction() {
+    document.getElementsByClassName("myBtn").disabled = true;
+  }
+  </script>
 
 </body>
 </html>
