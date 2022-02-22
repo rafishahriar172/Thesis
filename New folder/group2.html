@@ -100,19 +100,19 @@
                <td>Spring 221</td>
                <td>Capstone Project Title 1</td>
                <th><button type="button" class="btn btn-success" id="myBtn1" onclick="pop()">Join</button></th>
-               <th><button type="button" class="btn btn-danger">Cancel</button></th>
+               <th><button type="button" class="btn btn-danger" id="cbtn" disabled>Cancel</button></th>
              </tr>
            <tr>
              <td>Fall 213</td>
              <td>Capstone Project Title 2</td>
              <th><button type="button" class="btn btn-success" id="myBtn2" onclick="pop()">Join</button></th>
-             <th><button type="button" class="btn btn-danger">Cancel</button></th>
+             <th><button type="button" class="btn btn-danger" id="cbtn1" disabled>Cancel</button></th>
            </tr>
            <tr>
              <td>Spring 221</td>
              <td>Capstone Project Title 3</td>
              <th><button type="button" class="btn btn-success" id="myBtn3" onclick="pop()">Join</button></th>
-             <th><button type="button" class="btn btn-danger">Cancel</button></th>
+             <th><button type="button" class="btn btn-danger" id="cbtn2" disabled>Cancel</button></th>
            </tr>
        </tbody>
          </table>
@@ -126,13 +126,17 @@
 
    <script>
        function pop(){
-           alert("<em>Request Sucessful<em>");
+           alert("Request Sucessful");
            document.getElementById("myBtn1").disabled = true;
            document.getElementById("myBtn2").disabled = true;
            document.getElementById("myBtn3").disabled = true;
+           document.getElementById("cbtn").disabled = false;
+           document.getElementById("cbtn1").disabled = false;
+           document.getElementById("cbtn2").disabled = false;
            document.getElementById("myBtn1").innerText = "Pending";
            document.getElementById("myBtn2").innerText = "Pending";
            document.getElementById("myBtn3").innerText = "Pending";
+           
        }
    </script>
 </body>
