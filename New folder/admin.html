@@ -22,18 +22,23 @@
 
   <script>
 
-$( document ).ready(function() {
-    // console.log( "ready!" );
-    $("#displaytable").hide();
-    $("#displaytablez").hide();
-  $("#display").hide();
-});
+// $( document ).ready(function() {
+//     // console.log( "ready!" );
+//     $("#displaytable").hide();
+//     $("#displaytablez").hide();
+//   $("#display").hide();
+// });
 
 
   function myfunction()
 {
-  // var tablewrap = document.getElementById('displaytable');
+  var tablewrap = document.getElementById('displaytable');
   // tablewrap.classList.toggle('hidden')
+      if (tablewrap.style.display === "none") {
+        tablewrap.style.display = "block";
+      } else {
+        tablewrap.style.display = "none";
+      }
   //   if (document.getElementById("displaytable").style.display === "none")      
   //       {
   //         document.getElementById("displaytable").style.display="block";
@@ -46,28 +51,33 @@ $( document ).ready(function() {
   //       document.getElementById("display").style.display="none"; 
   //   }
 
-  $("#displaytable").show();
-  $("#display").hide();
+  // $("#displaytable").show();
+  // $("#display").show();
 };
 
 
 function memberFunc(){
-  // var x = document.getElementById('display');
+  var x = document.getElementById('displaytablez');
   // x.classList.toggle('hidden')
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-  // if (document.getElementById("display").style.display === "none")
+  // if (document.getElementById("displaytablez").style.display === "none")
   //       {
-  //         document.getElementById("display").style.display="block";
-  //         document.getElementById("displaytable").style.display="none";
+  //         document.getElementById("displaytablez").style.display="block";
+  //         document.getElementById("display").style.display="none";
   //       }
   //   else
   //       {
   //         document.getElementById("display").style.display="none";
-  //         document.getElementById("displaytable").style.display="none";
+  //         document.getElementById("displaytablez").style.display="none";
   //       }
 
-$("#displaytablez").show();
-  $("#display").hide();
+// $("#displaytablez").show();
+//   $("#display").show();
 
 
 };
@@ -224,6 +234,10 @@ padding: 56px;
 <button class="btn btn-primary btn-lg" onclick="myfunction()" style="
     margin-left: 20px;
 ">See Group Requests</button>
+<button class="btn btn-primary btn-lg" onclick="memberFunc()" style="
+    margin-top: 1px;
+    margin-left: 14px;
+">See Mentor Requests</button>
 <br>
 <br>
 <!-- <button onclick="memberFunc()">Member</button> -->
@@ -349,9 +363,6 @@ padding: 56px;
   </div>
 </div>
 
-<button class="btn btn-primary btn-lg" onclick="memberFunc()" style="
-    margin-left: 20px;
-">See Mentor Requests</button>
 <br>
 <br>
   <div id="displaytablez" class="placeholder">
