@@ -105,13 +105,13 @@
            <tr>
              <td>Fall 213</td>
              <td>Capstone Project Title 2</td>
-             <th><button type="button" class="btn btn-success" id="myBtn2" onclick="pop()">Join</button></th>
+             <th><button type="button" class="btn btn-success" id="myBtn2" onclick="pop1()">Join</button></th>
              <th><button type="button" class="btn btn-danger" id="cbtn1" disabled>Cancel</button></th>
            </tr>
            <tr>
              <td>Spring 221</td>
              <td>Capstone Project Title 3</td>
-             <th><button type="button" class="btn btn-success" id="myBtn3" onclick="pop()">Join</button></th>
+             <th><button type="button" class="btn btn-success" id="myBtn3" onclick="pop2()">Join</button></th>
              <th><button type="button" class="btn btn-danger" id="cbtn2" disabled>Cancel</button></th>
            </tr>
        </tbody>
@@ -128,13 +128,21 @@
        function pop(){
            alert("Request Sucessful");
            document.getElementById("myBtn1").disabled = true;
-           document.getElementById("myBtn2").disabled = true;
-           document.getElementById("myBtn3").disabled = true;
            document.getElementById("cbtn").disabled = false;
-           document.getElementById("cbtn1").disabled = false;
-           document.getElementById("cbtn2").disabled = false;
            document.getElementById("myBtn1").innerText = "Pending";
-           document.getElementById("myBtn2").innerText = "Pending";
+          
+           
+       }
+       function pop1(){
+           alert("Request Sucessful");
+           document.getElementById("myBtn2").disabled = true;
+           document.getElementById("cbtn1").disabled = false;
+           document.getElementById("myBtn2").innerText = "Pending";     
+       }
+       function pop2(){
+           alert("Request Sucessful");
+           document.getElementById("myBtn3").disabled = true;
+           document.getElementById("cbtn2").disabled = false;
            document.getElementById("myBtn3").innerText = "Pending";
            
        }
